@@ -5,7 +5,9 @@
 
  search-config
  {:zen/tags         #{aidbox.config/search}
-  :zen-fhir         :enable
+  :zen-fhir         :disable
+  :resource-compat  false
+  :engine           :knife
   :fhir-comparisons true
   :default-params   {:timeout 30
                      :total   "none"
