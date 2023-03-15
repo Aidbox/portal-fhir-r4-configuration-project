@@ -20,15 +20,14 @@
   :auth       {:pkce {:code-challenge {:s256 {:conformant true}}}}}
 
  zen-config
- {:zen/tags                #{aidbox.config/config}
+ {:zen/tags                #{aidbox.config/portal-config}
   :search                  search-config
   :compatibility           compatibility-config
 
   :fhir-version            "4.0.1"
   :compliant-mode-enabled? true
   :override-createdat-url  "http://fhir.aidbox.app/extension/createdat"
-  :correct-aidbox-format   true
-  :disable-legacy-seed     true}
+  :correct-aidbox-format   true}
 
  box
  {:zen/tags #{aidbox/system}
